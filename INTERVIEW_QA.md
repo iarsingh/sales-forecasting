@@ -116,3 +116,8 @@ The implementation in [`src/salesfc/forecast.py`](src/salesfc/forecast.py#L8) br
 - `not isinstance(value, (int, float)) or isinstance(value, bool)`
 
 A useful extension is a table-driven test that covers each condition just below, at, and above its boundary where applicable. These expressions are the current rules; changing them changes behavior and should be justified by the project’s acceptance criteria.
+
+## Request flow diagram
+
+The mermaid decision tree for `POST /forecast` is in [docs/PROCESS_FLOW.md](docs/PROCESS_FLOW.md). Use it in interviews to walk hold/refuse/422 vs a successful lab response without implying a production side effect.
+
